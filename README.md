@@ -14,7 +14,7 @@ Jumper EN1 must be wired to "enable" charging.
 ## Software connection
 In example program `emh-functional-test.py` specify your USB device. It depends on your OS and type of USB dongle.  
 
-I had to modify minimalmodbus library, because the header of response message (preambule) it's not ":" as usual, but ">".
+I had to modify minimalmodbus library (https://github.com/pyhys/minimalmodbus), because the header of response message (preambule) it's not ":" as usual, but ">".
 
 And keep in mind that first request on RS485 fails but it wakes up the instrument and next request will be successfull.
 
@@ -35,7 +35,7 @@ Jumper EN1 musí být propojen, aby šlo spustit nabíjení.
 ## Použití programu
 Funkční prototypový program `emh-functional-test.py` se umí připojit k nabíječce, vyčíst stav a nastavit nabíjecí proud. V programu upravte jméno vašeho USB zařízení. To záleží na operačním systému a typu USB zařízení.  
 
-Přikládám upravenou knihovnu minimalmodbus, kde bylo nutné upravit hlavičky zpráv. Hlavička odpovědi (preambule) totiž není ":" jak je běžné ale ">".
+Přikládám upravenou knihovnu minimalmodbus (https://github.com/pyhys/minimalmodbus), kde bylo nutné upravit hlavičky zpráv. Hlavička odpovědi (preambule) totiž není ":" jak je běžné ale ">".
 
 Upozorňuji na skutečnost, že první dotaz přes RS485 skončí chybou ale tím se probudí rozhraní a následující dotaz je již zpracován úspěšně.
 
